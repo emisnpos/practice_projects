@@ -1,0 +1,112 @@
+{% extends "layout.html" %}
+{% block title %} Index {% endblock %}
+
+{% block content %}
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+    </tr>
+    {% if session['logged_in'] %}
+     <tr style="background: #F0FFF0">
+      <th scope="row" >4</th>
+      <td>Bence</td>
+      <td>The king</td>
+      <td>@twitter</td>
+    </tr>
+     <tr style="background: #F0FFF0">
+      <th scope="row">5</th>
+      <td>Flóra</td>
+      <td>A róka</td>
+      <td>@instagram</td>
+    </tr>
+    {% endif %}
+  </tbody>
+</table>
+
+<table class="table">
+  <thead class="thead-light">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+    </tr>
+    {% if session['logged_in'] %}
+    <tr style="background: #F0FFF0">
+        <th scope="row">4</th>
+        <td>Sanyi</td>
+        <td>the Lamp</td>
+        <td>@facebook</td>
+      </tr>
+    <tr style="background: #F0FFF0">
+        <th scope="row">5</th>
+        <td>Máté</td>
+        <td>kapus</td>
+        <td>@twitter</td>
+      </tr>
+    <tr style="background: #F0FFF0">
+        <th scope="row">6</th>
+        <td>Tomi</td>
+        <td>the brain</td>
+        <td>@facebook</td>
+      </tr>
+    <tr style="background: #F0FFF0">
+        <th scope="row">7</th>
+        <td>Hanna</td>
+        <td>the wilding</td>
+        <td>@instagram</td>
+      </tr>
+     <tr style="background: #F0FFF0">
+        <th scope="row">8</th>
+        <td>Liza</td>
+        <td>the shyguy</td>
+        <td>@instagram</td>
+      </tr>
+    {% endif %}
+  </tbody>
+</table>
+{% endblock %}
